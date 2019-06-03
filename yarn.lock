@@ -2970,10 +2970,10 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
-datocms-client@~1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/datocms-client/-/datocms-client-1.0.0.tgz#d32e0d2a48d88cbaea23f9fac2bb8ae6826e0f4d"
-  integrity sha512-DtPv5HIcjftuj4Y4Igsm1CkpCcwAsA0S3hrrIPEJy3tybK2vHB/0C5qqYJP3eTJSVENUPTkVVBsFOOiIGOtpzw==
+datocms-client@~1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/datocms-client/-/datocms-client-1.0.5.tgz#7bb5748da100162a5872f6ce45db2c740f281958"
+  integrity sha512-X8ox2rx2Pnb7FAH7Ii6CU/UNu9GL/wqVHomyQUeV3ZZTqp1xfmw5zhFBXH8I0oxkGmFJK6beWBLJeX+Tn69w5A==
   dependencies:
     arr-diff "^4.0.0"
     babel-polyfill "^6.26.0"
@@ -4478,14 +4478,14 @@ gatsby-react-router-scroll@^2.0.7:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-source-datocms@2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/gatsby-source-datocms/-/gatsby-source-datocms-2.1.4.tgz#8a54001b85b98258a95887d9ed2bd430592c1728"
-  integrity sha512-yMabXMOk2GiLl6LlQkiUOLs0Y+YcADPsU73ffe8Mw2stMx8l+u1XqcK44M+WKxoU/iEdfqJvU8lE13zWXexKGw==
+gatsby-source-datocms@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/gatsby-source-datocms/-/gatsby-source-datocms-2.1.5.tgz#b659981cda5a6f73467788a660561b3f1eb35479"
+  integrity sha512-8SXv1kuOSC+3opzV7rwblF92b11ZmkhOW1JM6RC/REW4mwbYNbhGYrU6w6UbLJLE/rpH19KSNKju7GPYspXxiw==
   dependencies:
     babel-polyfill "^6.26.0"
     babel-runtime "^6.26.0"
-    datocms-client "~1.0.0"
+    datocms-client "~1.0.5"
     fs-extra ">=4.0.2"
     humps ">=2.0.1"
     imgix-url-params "7.4.0"

@@ -8,15 +8,15 @@ import Layout from "../components/layout";
 export default ({ data }) => (
   <Layout>
     <article className="sheet">
-      <HelmetDatoCms seo={data.allDatoCmsBook.seoMetaTags} />
+      <HelmetDatoCms seo={data.datoCmsBook.seoMetaTags} />
       <div className="sheet__inner">
-        <h1 className="sheet__title">{data.allDatoCmsBook.title}</h1>
-        <p className="sheet__lead">{data.allDatoCmsBook.excerpt}</p>
+        <h1 className="sheet__title">{data.datoCmsBook.title}</h1>
+        <p className="sheet__lead">{data.datoCmsBook.excerpt}</p>
         <div className="sheet__slider">
           <Slider infinite={true} slidesToShow={2} arrows>
-            {data.allDatoCmsBook.gallery.map(({ fluid }) => (
+            {data.datoCmsBook.gallery.map(({ fluid }) => (
               <img
-                alt={data.allDatoCmsBook.title}
+                alt={data.datoCmsBook.title}
                 key={fluid.src}
                 src={fluid.src}
               />
@@ -26,11 +26,11 @@ export default ({ data }) => (
         <div
           className="sheet__body"
           dangerouslySetInnerHTML={{
-            __html: data.allDatoCmsBook.descriptionNode.childMarkdownRemark.html
+            __html: data.datoCmsBook.descriptionNode.childMarkdownRemark.html
           }}
         />
         <div className="sheet__gallery">
-          <Img fluid={data.allDatoCmsBook.coverImage.fluid} />
+          <Img fluid={data.datoCmsBook.coverImage.fluid} />
         </div>
       </div>
     </article>
