@@ -10,12 +10,12 @@ const IndexPage = ({ data }) => (
       {data.allDatoCmsModule.edges.map(({ node: module }) => (
         <div key={module.id} className="showcase__item">
           <figure className="card">
-            <Link to={`/probe-server/${module.slug}`} className="card__image">
+            <Link to={`/open-source/${module.slug}`} className="card__image">
               <Img fluid={module.coverImage.fluid} />
             </Link>
             <figcaption className="card__caption">
               <h6 className="card__title">
-                <Link to={`/modules/${module.slug}`}>{module.title}</Link>
+                <Link to={`/open-source/${module.slug}`}>{module.title}</Link>
               </h6>
               <div className="card__description">
                 <p>{module.excerpt}</p>
