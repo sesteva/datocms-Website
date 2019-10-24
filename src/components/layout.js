@@ -61,13 +61,26 @@ const TemplateWrapper = ({ children }) => (
                 <Link to="/">Home</Link>
               </li>
               <li>
+                <Link to="/talks">Talks</Link>
+              </li>
+              <li>
+                <Link to="/open-source">Open Source</Link>
+              </li>
+              <li>
                 <Link to="/about">About</Link>
               </li>
               <li>
                 <Link to="/books">Books</Link>
               </li>
+              <li></li>
               <li>
-                <Link to="/open-source">Open Source</Link>
+                <a
+                  href="http://graphqlscalars.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GraphQL Custom Scalars Index
+                </a>
               </li>
             </ul>
             <p className="sidebar__social">
@@ -92,9 +105,17 @@ const TemplateWrapper = ({ children }) => (
             <div className="mobile-header">
               <div className="mobile-header__menu_links">
                 <Link to="/about">About</Link>
-                <Link to="/books">Books</Link>
+                <Link to="/talks">Talks</Link>
                 <Link to="/open-source">Open Source</Link>
+                <Link to="/books">Books</Link>
                 <Link to="/">Blog</Link>
+                <a
+                  href="http://graphqlscalars.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GraphQL Custom Scalars Index
+                </a>
               </div>
               <div className="mobile-header__logo">
                 <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
