@@ -21,9 +21,33 @@ const IndexPage = ({ data }) => (
                 </p>
                 <p>{talk.tag.description}</p>
                 <p>
-                  {talk.slides !== "" && <a href="">Slides</a>}
-                  {talk.repo !== "" && <a href="">Repo</a>}
-                  {talk.video !== "" && <a href="">Video</a>}
+                  {talk.slides !== "" && (
+                    <a
+                      href={talk.slides}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Slides
+                    </a>
+                  )}
+                  {talk.repo !== "" && (
+                    <a
+                      href={talk.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Repo
+                    </a>
+                  )}
+                  {talk.video !== "" && (
+                    <a
+                      href={talk.video}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Video
+                    </a>
+                  )}
                 </p>
               </div>
             </figcaption>
