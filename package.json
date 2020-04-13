@@ -5,10 +5,11 @@
   "author": "Stefano Verna <s.verna@datocms.com>",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "gatsby": "2.17.2",
+    "gatsby": "^2.19.5",
     "gatsby-image": "^2.0.40",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-sharp": "^2.4.0",
     "gatsby-source-datocms": "^2.1.5",
     "gatsby-source-filesystem": "^2.0.32",
     "gatsby-transformer-remark": "^2.3.12",
