@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from "gatsby";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 
 import "../styles/index.sass";
+import "../styles/site.css";
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -72,7 +73,9 @@ const TemplateWrapper = ({ children }) => (
               <li>
                 <Link to="/books">Books</Link>
               </li>
-              <li></li>
+              <li>
+                <Link to="/manager-resources">Manager Resources</Link>
+              </li>
               <li>
                 <a
                   href="http://graphqlscalars.com"
