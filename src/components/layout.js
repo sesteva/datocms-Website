@@ -59,7 +59,10 @@ const TemplateWrapper = ({ children }) => (
             />
             <ul className="sidebar__menu">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/">Latest</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
               </li>
               <li>
                 <Link to="/talks">Talks</Link>
@@ -67,9 +70,7 @@ const TemplateWrapper = ({ children }) => (
               <li>
                 <Link to="/open-source">Open Source</Link>
               </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
+
               <li>
                 <Link to="/books">Books</Link>
               </li>
@@ -82,7 +83,7 @@ const TemplateWrapper = ({ children }) => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GraphQL Custom Scalars Index
+                  GraphQL Scalars Index
                 </a>
               </li>
             </ul>

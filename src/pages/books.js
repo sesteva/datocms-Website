@@ -14,11 +14,13 @@ const IndexPage = ({ data }) => (
               <Img fluid={book.coverImage.fluid} />
             </Link>
             <figcaption className="card__caption">
-              <h6 className="card__title">
-                <Link to={`/books/${book.slug}`}>{book.title}</Link>
-              </h6>
               <div className="card__description">
                 <p>{book.excerpt}</p>
+                <span className="bg-blue-500 hover:bg-blue-700 rounded text-white py-2 px-4 rounded-full">
+                  <a href={book.link} target="_blank" rel="noopener noreferrer">
+                    More...
+                  </a>
+                </span>
               </div>
             </figcaption>
           </figure>
@@ -37,7 +39,7 @@ export const query = graphql`
         node {
           id
           title
-          slug
+          link
           excerpt
           coverImage {
             fluid(maxWidth: 450, imgixParams: { fm: "jpg", auto: "compress" }) {
