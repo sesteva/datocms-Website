@@ -41,7 +41,7 @@ export default IndexPage;
 
 export const query = graphql`
   query MgrResourcesQuery {
-    allDatoCmsResource {
+    allDatoCmsResource(sort: { fields: [meta___publishedAt], order: DESC }) {
       edges {
         node {
           id
