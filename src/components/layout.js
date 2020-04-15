@@ -111,14 +111,14 @@ const TemplateWrapper = ({ children }) => (
                 <Link to="/about">About</Link>
                 <Link to="/blog">Blog</Link>
                 <Link to="/talks">Talks</Link>
-                <Link to="/open-source">Open Source</Link>
-                <Link to="/manager-resources">Manager Resources</Link>
+                <Link to="/open-source">OS</Link>
+                <Link to="/manager-resources">Mgr Rsc</Link>
                 <a
                   href="http://graphqlscalars.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GraphQL Scalars Index
+                  GQL Scalars Index
                 </a>
               </div>
               <div className="mobile-header__logo">

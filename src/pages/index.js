@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
                   <p className="text-gray-700 text-base">{item.excerpt}</p>
                 </div>
                 <div className="px-6 py-4">
-                  <span className="bg-pink-300 rounded text-gray py-2 px-4 rounded-full float-left">
+                  <span className="bg-pink-300 rounded text-sm text-gray py-2 px-3 rounded-full float-left">
                     {date.getMonth()} - {date.getDate()} - {date.getFullYear()}
                   </span>
                   <span className="bg-blue-500 hover:bg-blue-700 rounded text-white py-2 px-4 rounded-full float-right">
