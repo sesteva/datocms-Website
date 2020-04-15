@@ -65,14 +65,13 @@ const TemplateWrapper = ({ children }) => (
                 <Link to="/about">About</Link>
               </li>
               <li>
+                <Link to="/blog">Blog</Link>
+              </li>
+              <li>
                 <Link to="/talks">Talks</Link>
               </li>
               <li>
                 <Link to="/open-source">Open Source</Link>
-              </li>
-
-              <li>
-                <Link to="/books">Books</Link>
               </li>
               <li>
                 <Link to="/manager-resources">Manager Resources</Link>
@@ -108,17 +107,18 @@ const TemplateWrapper = ({ children }) => (
           <div className="container__mobile-header">
             <div className="mobile-header">
               <div className="mobile-header__menu_links">
+                <Link to="/">Latest</Link>
                 <Link to="/about">About</Link>
+                <Link to="/blog">Blog</Link>
                 <Link to="/talks">Talks</Link>
                 <Link to="/open-source">Open Source</Link>
-                <Link to="/books">Books</Link>
-                <Link to="/">Blog</Link>
+                <Link to="/manager-resources">Manager Resources</Link>
                 <a
                   href="http://graphqlscalars.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GraphQL Custom Scalars Index
+                  GraphQL Scalars Index
                 </a>
               </div>
               <div className="mobile-header__logo">
