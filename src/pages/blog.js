@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
               </div>
               <div className="px-6 py-4">
                 <span className="bg-blue-500 hover:bg-blue-700 rounded text-white py-2 px-4 rounded-full float-right">
-                  <Link to={item.link}>More...</Link>
+                  <Link to={`/works/${item.link}`}>More...</Link>
                 </span>
               </div>
             </div>

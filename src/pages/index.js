@@ -8,7 +8,7 @@ const IndexPage = ({ data }) => {
     ...data.allDatoCmsTalk.edges,
     ...data.allDatoCmsModule.edges,
     ...data.allDatoCmsWork.edges,
-    ...data.allDatoCmsResource.edges
+    ...data.allDatoCmsResource.edges,
   ];
   results.sort(
     (a, b) => new Date(b.node.meta.createdAt) - new Date(a.node.meta.createdAt)
@@ -33,7 +33,11 @@ const IndexPage = ({ data }) => {
                   </span>
                   <span className="bg-blue-500 hover:bg-blue-700 rounded text-white py-2 px-4 rounded-full float-right">
                     <a
-                      href={item.link}
+                      href={
+                        item.__typename === "DatoCmsWork"
+                          ? `/works/${item.link}`
+                          : item.link
+                      }
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -61,6 +65,7 @@ export const query = graphql`
           title
           excerpt
           link: slug
+          __typename
           meta {
             createdAt
           }
@@ -74,6 +79,7 @@ export const query = graphql`
           title
           excerpt
           link: slides
+          __typename
           meta {
             createdAt
           }
@@ -87,6 +93,7 @@ export const query = graphql`
           title
           excerpt
           link
+          __typename
           meta {
             createdAt
           }
@@ -100,6 +107,7 @@ export const query = graphql`
           title
           excerpt
           link
+          __typename
           meta {
             createdAt
           }
