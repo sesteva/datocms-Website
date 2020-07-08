@@ -40,7 +40,7 @@ const TemplateWrapper = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <div className="container">
         <HelmetDatoCms
           favicon={data.datoCmsSite.faviconMetaTags}
@@ -54,33 +54,46 @@ const TemplateWrapper = ({ children }) => (
             <div
               className="sidebar__intro"
               dangerouslySetInnerHTML={{
-                __html: data.datoCmsHome.introTextNode.childMarkdownRemark.html
+                __html: data.datoCmsHome.introTextNode.childMarkdownRemark.html,
               }}
             />
             <ul className="sidebar__menu">
               <li>
-                <Link to="/">Latest</Link>
+                <Link to="/" data-i18n-key="latest">
+                  Latest
+                </Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about" data-i18n-key="about">
+                  About
+                </Link>
               </li>
               <li>
-                <Link to="/blog">Blog</Link>
+                <Link to="/blog" data-i18n-key="blog">
+                  Blog
+                </Link>
               </li>
               <li>
-                <Link to="/talks">Talks</Link>
+                <Link to="/talks" data-i18n-key="talks">
+                  Talks
+                </Link>
               </li>
               <li>
-                <Link to="/open-source">Open Source</Link>
+                <Link to="/open-source" data-i18n-key="oss">
+                  Open Source
+                </Link>
               </li>
               <li>
-                <Link to="/manager-resources">Manager Resources</Link>
+                <Link to="/manager-resources" data-i18n-key="mgr">
+                  Manager Resources
+                </Link>
               </li>
               <li>
                 <a
                   href="http://graphqlscalars.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-i18n-key="scalars"
                 >
                   GraphQL Scalars Index
                 </a>
@@ -134,7 +147,7 @@ const TemplateWrapper = ({ children }) => (
 );
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.object
+  children: PropTypes.object,
 };
 
 export default TemplateWrapper;
