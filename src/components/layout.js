@@ -120,16 +120,29 @@ const TemplateWrapper = ({ children }) => (
           <div className="container__mobile-header">
             <div className="mobile-header">
               <div className="mobile-header__menu_links">
-                <Link to="/">Latest</Link>
-                <Link to="/about">About</Link>
-                <Link to="/blog">Blog</Link>
-                <Link to="/talks">Talks</Link>
-                <Link to="/open-source">OS</Link>
-                <Link to="/manager-resources">Mgr Rsc</Link>
+                <Link to="/" data-i18n-key="latest">
+                  Latest
+                </Link>
+                <Link to="/about" data-i18n-key="about">
+                  About
+                </Link>
+                <Link to="/blog" data-i18n-key="blog">
+                  Blog
+                </Link>
+                <Link to="/talks" data-i18n-key="talks">
+                  Talks
+                </Link>
+                <Link to="/open-source" data-i18n-key="oss">
+                  OS
+                </Link>
+                <Link to="/manager-resources" data-i18n-key="mgr">
+                  Mgr Rsc
+                </Link>
                 <a
                   href="http://graphqlscalars.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-i18n-key="scalars"
                 >
                   GQL Scalars Index
                 </a>
