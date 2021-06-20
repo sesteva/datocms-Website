@@ -59,32 +59,32 @@ const TemplateWrapper = ({ children }) => (
             />
             <ul className="sidebar__menu">
               <li>
-                <Link to="/" data-i18n-key="latest">
+                <Link to="/" >
                   Latest
                 </Link>
               </li>
               <li>
-                <Link to="/about" data-i18n-key="about">
+                <Link to="/about" >
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/blog" data-i18n-key="blog">
+                <Link to="/blog" >
                   Blog
                 </Link>
               </li>
               <li>
-                <Link to="/talks" data-i18n-key="talks">
+                <Link to="/talks" >
                   Talks
                 </Link>
               </li>
               <li>
-                <Link to="/open-source" data-i18n-key="oss">
+                <Link to="/open-source" >
                   Open Source
                 </Link>
               </li>
               <li>
-                <Link to="/manager-resources" data-i18n-key="mgr">
+                <Link to="/manager-resources" >
                   Manager Resources
                 </Link>
               </li>
@@ -93,7 +93,7 @@ const TemplateWrapper = ({ children }) => (
                   href="http://graphqlscalars.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-i18n-key="scalars"
+                  
                 >
                   GraphQL Scalars Index
                 </a>
@@ -120,29 +120,29 @@ const TemplateWrapper = ({ children }) => (
           <div className="container__mobile-header">
             <div className="mobile-header">
               <div className="mobile-header__menu_links">
-                <Link to="/" data-i18n-key="latest">
+                <Link to="/" >
                   Latest
                 </Link>
-                <Link to="/about" data-i18n-key="about">
+                <Link to="/about" >
                   About
                 </Link>
-                <Link to="/blog" data-i18n-key="blog">
+                <Link to="/blog" >
                   Blog
                 </Link>
-                <Link to="/talks" data-i18n-key="talks">
+                <Link to="/talks" >
                   Talks
                 </Link>
-                <Link to="/open-source" data-i18n-key="oss">
+                <Link to="/open-source" >
                   OS
                 </Link>
-                <Link to="/manager-resources" data-i18n-key="mgr">
+                <Link to="/manager-resources" >
                   Mgr Rsc
                 </Link>
                 <a
                   href="http://graphqlscalars.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-i18n-key="scalars"
+                  
                 >
                   GQL Scalars Index
                 </a>
